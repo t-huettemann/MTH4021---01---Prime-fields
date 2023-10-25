@@ -1,0 +1,11 @@
+entrypoint = "main.py"
+modules = ["python-3.10:v18-20230807-322e88b"]
+run = ["sh", ".lesson/runtest.sh"]
+hidden = [".pythonlibs"]
+
+[nix]
+channel = "stable-23_05"
+
+[deployment]
+run = ["sh", ".lesson/runtest.sh"]
+deploymentTarget = "cloudrun"
